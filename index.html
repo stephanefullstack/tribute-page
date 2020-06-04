@@ -1,12 +1,158 @@
+<style >
+  html {
+  /* Setting a base font size of 10px give us easier rem calculations
+     Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+   */
+  font-size: 10px;
+}
 
-modify content from Norman Borlang to Muhamad Ali
+body {
+  /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
 
-# Please enter the commit message for your changes. Lines starting
-# with '#' will be ignored, and an empty message aborts the commit.
-#
-# On branch master
-# Your branch is up to date with 'origin/master'.
-#
-# Changes to be committed:
-#	modified:   index.html
-#
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+}
+
+h2 {
+  font-size: 3.25rem;
+}
+
+a {
+  color: #477ca7;
+}
+
+a:visited {
+  color: #74638f;
+}
+
+#main {
+  margin: 00px 8px;
+  padding: 15px;
+  border-radius: 5px;
+  background: #eee;
+}
+
+@media (max-width: 460px) {
+  #main {
+    margin: 0;
+  }
+}
+
+img {
+  max-width: 70%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+#img-div {
+  background: white;
+  padding: 10px;
+  margin: 0;
+}
+
+
+#img-caption {
+  margin: 10px 30% 5px 30%;
+}
+
+@media (max-width: 460px) {
+  #img-caption {
+    font-size: 1.4rem;
+  }
+}
+
+#headline {
+  margin: 50px 0;
+  text-align: center;
+}
+
+ul {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+li {
+  margin: 16px 0;
+}
+
+blockquote {
+  font-style: italic;
+  max-width: 545px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+}
+</style>
+<main id="main">
+  <h1 id="title">Muhammad Ali</h1>
+  <p>The Greatest</p>
+  <figure id="img-div">
+    <img
+      id="image"
+      src="https://www.gannett-cdn.com/-mm-/d9972ab11fc3f209d346370a99368efb4b9e7f65/c=0-529-1822-1559/local/-/media/2016/02/25/USATODAY/USATODAY/635920036022544336-AP-ON-BOXING-ALI.jpg?width=1822&height=1030&fit=crop&format=pjpg&auto=webp"
+      alt="Muhammad Ali, then known as Cassius Clay, celebrates after winning the heavyweight championship with a knockout of Sonny Liston in the seventh round on Feb. 25, 1964 in Miami Beach, Fla."
+    />
+    <figcaption id="img-caption">
+Muhammad Ali, then known as Cassius Clay, celebrates after winning the heavyweight championship with a knockout of Sonny Liston in the seventh round on Feb. 25, 1964 in Miami Beach, Fla..
+    </figcaption>
+  </figure>
+  <section id="tribute-info">
+    <h3 id="headline">SIX CORE PRINCIPLES</h3>
+    <ul>
+      <li><strong>Confidence</strong> - Belief  in oneself, one’s abilities, and one’s future.</li>
+      <li>
+        <strong>Conviction</strong> - A firm belief that gives one the courage to stand behind that belief, despite pressure to do otherwise.
+      </li>
+      <li>
+        <strong>Dedication</strong> - The act of devoting all of one’s energy, effort, and abilities to a certain task.
+      </li>
+      <li>
+        <strong>Giving</strong> -  	To present voluntarily without expecting something in return.
+      </li>
+      <li>
+        <strong>Respect</strong> - Esteem for, or a sense of the worth or excellence of, oneself and others.
+      </li>
+      <li>
+        <strong>Spirituality</strong> - A sense of awe, reverence, and inner peace inspired by a connection to all of creation and/or that which is greater than oneself.
+      </li>
+
+    </ul>
+    <blockquote
+      cite="http://news.rediff.com/report/2009/sep/14/pm-pays-tribute-to-father-of-green-revolution-borlaug.htm"
+    >
+      <p>
+        “Champions aren't made in gyms. Champions are made from something they
+        have deep inside them-a desire, a dream, a vision. They have to have
+        the skill, and the will. But the will must be stronger than the skill.”
+      </p>
+      <cite>-- Muhamad Ali</cite>
+    </blockquote>
+    <h3>
+      If you have time, you should read more about this incredible human being
+      on his
+      <a
+        id="tribute-link"
+        href="https://en.wikipedia.org/wiki/Muhammad_Ali"
+        target="_blank"
+        >Wikipedia entry</a
+      >.
+    </h3>
+  </section>
+</main>
